@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>API Platzi Badges</title>
+        <title>{{ env('APP_NAME') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -86,10 +86,10 @@
 
                 <div class="links">
                     <a href="https://github.com/yomarsanchez/api-platzi-badges">Docs</a>
-                    <a href="https://platzi.com/clases/react/">Curso reactjs - Platzi</a>
-                    <a href="https://twitter.com/sparragus">Profesor</a>
-                    <a href="https://github.com/yomarsanchez/api-platzi-badges/issues">Issues</a>
-                    <a href="https://github.com/yomarsanchez/api-platzi-badges">GitHub</a>
+                    <a href="https://platzi.com/clases/react/" target="_black">Curso reactjs - Platzi</a>
+                    <a href="https://twitter.com/sparragus" target="_black">Profesor</a>
+                    <a href="https://github.com/yomarsanchez/api-platzi-badges/issues" target="_black">Issues</a>
+                    <a href="https://github.com/yomarsanchez" target="_black">GitHub</a>
                 </div>
             </div>
         </div>

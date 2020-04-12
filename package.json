@@ -2,7 +2,7 @@
   "private": true,
   "name": "api-platzi-badges",
   "version": "0.1.0",
-  "description": "Rest API para el proyecto PlatziBadges https://platzi.com/clases/react/",
+  "description": "Rest API for the Platzi Badges project of the React course.",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",

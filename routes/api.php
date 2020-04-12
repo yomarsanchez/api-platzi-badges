@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,18 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/badges', 'BadgeController@index')->name('badges');
+
+Route::get('/badges/{badge}', 'BadgeController@show')
+    ->where('badge', '^[\w-=_]*$')
+    ->name('badges.show');
+
+Route::post('/badges', 'BadgeController@store')->name('badges.store');
+
+Route::put('/badges/{badge}', 'BadgeController@update')
+    ->where('badge', '^[\w-=_]*$')
+    ->name('badges.update');
+
+Route::delete('/badges/{badge}', 'BadgeController@destroy')
+    ->where('badge', '^[\w-=_]*$')
+    ->name('badges.destroy');
