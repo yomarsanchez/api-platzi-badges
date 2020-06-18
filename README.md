@@ -15,9 +15,9 @@ Crud **Badges**
 
 | Endpoint              | Method     | Name           | Description                          |
 | --------------------- | ---------- | -------------- | ------------------------------------ |
-| `/api/badges`         | `GET|HEAD` | badges         | Retrieve all the badges              |
+| `/api/badges`         | `GET` | badges         | Retrieve all the badges              |
 | `/api/badges`         | `POST`     | badges.store   | Create a new resource of badge       |
-| `/api/badges/{badge}` | `GET|HEAD` | badges.show    | Retrieve an specific badge with `id` |
+| `/api/badges/{badge}` | `GET` | badges.show    | Retrieve an specific badge with `id` |
 | `/api/badges/{badge}` | `PUT`      | badges.update  | Update an existing badge             |
 | `/api/badges/{badge}` | `DELETE`   | badges.destroy | Remove a badge                       |
 
